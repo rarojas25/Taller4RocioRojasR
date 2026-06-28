@@ -17,7 +17,7 @@ import sistema.SistemaCartas;
 public class VentanaPrincipal extends JFrame{
 	private SistemaCartas sistema;
 	private PanelColeccion panelColeccion;
-	private PanelAdministraccion panelAdmin;
+	private PanelAdministracion panelAdmin;
 	
 	public VentanaPrincipal() {
 		sistema = SistemaCartas.getInstancia();
@@ -48,7 +48,7 @@ public class VentanaPrincipal extends JFrame{
 		
 		add(header, BorderLayout.NORTH);
 		
-		JTabbebPane tabs = new JTabbedPane();
+		JTabbedPane tabs = new JTabbedPane();
 		tabs.setFont(new Font("SansSerif", Font.BOLD, 13));
 		
 		panelColeccion = new PanelColeccion(sistema);
@@ -62,7 +62,7 @@ public class VentanaPrincipal extends JFrame{
 		JPanel footer = new JPanel(new FlowLayout(FlowLayout.RIGHT));
 		footer.setBackground(new Color(50, 30, 110));
 		
-		JLabel lblFooter = new JLabel("Taller 4 POO- rarojas25");
+		JLabel lblFooter = new JLabel("Taller 4 POO - rarojas25");
 		lblFooter.setFont(new Font("sansSerif", Font.ITALIC, 11));
 		lblFooter.setForeground(new Color(200, 180, 255));
 		footer.add(lblFooter);
